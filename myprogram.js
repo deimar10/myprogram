@@ -8,10 +8,12 @@ http.createServer(function (req, res) {
     });
 }).listen(8080);
 
+
+
 var fs = require('fs');
 
 //create a file named mynewfile1.txt:
-fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
+fs.appendFile('mynewfile1.txt', 'This is my text', function (err) {
     if (err) throw err;
-    console.log('Saved!');
+    console.log('Update');
 });

@@ -13,7 +13,7 @@ http.createServer(function (req, res) {
 var fs = require('fs');
 
 //create a file named mynewfile1.txt:
-fs.appendFile('mynewfile1.txt', 'This is my text', function (err) {
+fs.writeFile('mynewfile1.txt', 'This is my new content', function (err) {
     if (err) throw err;
-    console.log('Update');
+    console.log('Replace');
 });
